@@ -31,8 +31,8 @@ def extract_tweet_attributes(tweet_obj):
     tweet_list = []
     # loop through tweet objects
     for tweet in tweet_obj:
-        tweet_at = tweet.user.name # User's @ name/ID
-        tweet_user = tweet.user.screen_name # User's display name
+        tweet_user = tweet.user.name  # User's display name
+        tweet_at = tweet.user.screen_name  # User's @ name/ID
         tweet_id = tweet.id  # ID of the tweet
         text = tweet.text  # Text of the tweet
         favorite_count = tweet.favorite_count
