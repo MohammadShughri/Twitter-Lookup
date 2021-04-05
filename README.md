@@ -16,5 +16,4 @@ You can check the sorting method by putting the desired column at the beggning o
 
 ```
 sorted_df = df.sort_values(["Favorite count", "Retweet count", "Date of the tweet", "Discussion"], ascending=(False, False, False, False))
-
 ```
