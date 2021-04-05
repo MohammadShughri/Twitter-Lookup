@@ -41,23 +41,23 @@ def extract_tweet_attributes(tweet_obj):
         discussion_users = tweet.in_reply_to_screen_name  # @ Names of users who replied
 
         # Adding tweet attributes to the list
-        tweet_list.append({'Tweet_id': tweet_id,
-                           'Twitter_display_name': tweet_user,
-                           'Tweet_@_name': tweet_at,
-                           'Tweet_text': text,
-                           'Favorite_count': favorite_count,
-                           'Retweet_count': retweet_count,
+        tweet_list.append({'Tweet ID': tweet_id,
+                           'Display name': tweet_user,
+                           'Tweet @name': tweet_at,
+                           'Tweet text': text,
+                           'Favorite count': favorite_count,
+                           'Retweet count': retweet_count,
                            'Date of the tweet': tweet_date,
                            'Discussion': discussion_users,
                            })
 
     # Dataframe
-    df = pd.DataFrame(tweet_list, columns=['Tweet_id',
-                                           'Twitter_display_name',
-                                           'Tweet_@_name',
-                                           'Tweet_text',
-                                           'Favorite_count',
-                                           'Retweet_count',
+    df = pd.DataFrame(tweet_list, columns=['Tweet ID',
+                                           'Display name',
+                                           'Tweet @name',
+                                           'Tweet text',
+                                           'Favorite count',
+                                           'Retweet count',
                                            'Date of the tweet',
                                            'Discussion'])
 
@@ -72,7 +72,7 @@ df = extract_tweet_attributes(tweet_search)
 x = pd.read_csv(r'C:\Users\Mohammad Shughri\Desktop\test2.csv')
 
 # Sorting the values in descending order
-sorted_df = df.sort_values(["Favorite_count", "Retweet_count", "Date of the tweet", "Discussion"], ascending=(False, False, False, False))
+sorted_df = df.sort_values(["Favorite count", "Retweet count", "Date of the tweet", "Discussion"], ascending=(False, False, False, False))
 sorted_df.to_csv(r'C:\Users\Mohammad Shughri\Desktop\test2.csv', index=False)
 print(sorted_df)
 
