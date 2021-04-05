@@ -15,5 +15,6 @@ I couldn’t quite figure out what’s the problem. I’m assuming it’s a bug 
 You can check the sorting method by putting the desired column at the beggning of sort_values.
 
 ```
-sorted_df = df.sort_values(["retweet_count", "favorite_countt", "created_at", "reply_to_status"], ascending=(False, False, False, False))
+sorted_df = df.sort_values(["Favorite count", "Retweet count", "Date of the tweet", "Discussion"], ascending=(False, False, False, False))
+
 ```
