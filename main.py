@@ -3,10 +3,10 @@ import pandas as pd
 import webbrowser
 
 # API Authentication
-ACCESS_TOKEN = '623947370-RV0FPSxSVXbTM8amwn9Fi22VV5Lt4RbHhh3AIWhk'
-ACCESS_SECRET = 'BWnSPEBZb9s4LNIsPMRQxQIccHictI4vUdDqK6LfbqPYU'
-CONSUMER_KEY = 'hSbJP9K4ovZ6Nt6t2NlG3vzqV'
-CONSUMER_SECRET = 'LFsas61Gvaoik6ly6XYIjJCG11fbjWp2RnytFLm7BjWPu3b2k9'
+ACCESS_TOKEN = ''
+ACCESS_SECRET = ''
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
 
 
 # Accessing the API's data
