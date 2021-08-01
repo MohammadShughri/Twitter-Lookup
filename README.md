@@ -1,4 +1,4 @@
-# yjmMSswmJSbJ0RSU
+# Twitter Lookup
 
 This project uses the tweepy library to get information related to the tweets that we are looking for using certain words (query).
 
